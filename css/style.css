@@ -1,0 +1,26 @@
+table, th , td {
+   border: 1px solid grey;
+   border-collapse: collapse;
+   padding: 5px;
+}
+
+table tr:nth-child(odd) {
+   background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+   background-color: #ffffff;
+}
+table img{
+   width: 100px;
+   height: 100px;
+}
+th {
+  cursor:pointer;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  padding: 5px;
+}

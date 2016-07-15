@@ -1,0 +1,72 @@
+[
+  { 
+    "list": 1,
+    "description": "leopolis",
+    "url": "img/king_cross_lviv.jpg",
+    "latitude": 49.773697,
+    "longitude": 24.010206
+  },
+  {
+    "list": 3,
+    "description": "Львівський Оперний театр",
+    "url": "img/opera_lviv.jpg",
+    "latitude": 49.844159,
+    "longitude": 24.026201
+  },
+  {
+    "list": 2,
+    "description": "Шевченківський гай",
+    "url": "img/lviv_shevchenko.jpg",
+    "latitude": 49.838897,
+    "longitude": 24.054366
+  },
+  {
+    "list": 5,
+    "description": "Фонтан у Стрийському парку",
+    "url": "img/fontan_stryj_park.jpg",
+    "latitude": 49.823192,
+    "longitude": 24.024981
+  },
+  {
+    "list": 4,
+    "description": "Високий Замок",
+    "url": "img/lviv_visokiy_zamok.jpg",
+    "latitude": 49.848468,
+    "longitude": 24.039192
+  },
+  {
+    "list": 7,
+    "description": "Палац Потоцьких",
+    "url": "img/palac_potoc.jpg",
+    "latitude": 49.838069,
+    "longitude": 24.026852
+  },
+  {
+    "list": 6,
+    "description": "Львівська ратуша",
+    "url": "img/ratusha.jpg",
+    "latitude": 49.841878,
+    "longitude": 24.031724
+  },
+  {
+    "list": 9,
+    "description": "ЛНУ ім.Івана Франка",
+    "url": "img/univer.jpg",
+    "latitude": 49.840019,
+    "longitude": 24.022365
+  },
+  {
+    "list": 8,
+    "description": "Львівський Головний Вокзал",
+    "url": "img/vokzal.jpg",
+    "latitude": 49.840063,
+    "longitude": 23.993800
+  },
+  {
+    "list": 10,
+    "description": "Зелена 109 ;)",
+    "url": "img/vakoms.jpg",
+    "latitude": 49.823952,
+    "longitude": 24.052576
+  }
+]

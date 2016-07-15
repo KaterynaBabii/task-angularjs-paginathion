@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head> 
+    <script data-require="angular.js@*" data-semver="1.3.15" src="https://code.angularjs.org/1.3.15/angular.js"></script>
+    <script src="js/pagination.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <form>
+        <div>
+          <label>Search</label>
+          <input type="text" ng-model="search.list" placeholder="Search by list">
+          <input type="text" ng-model="search.description" placeholder="Search by description">
+        </div>
+      </form>
+      <hr>
+      <div>
+        <label for="item-per-page">Items per page</label>
+        <div>
+          <select id="item-per-page" ng-model="itemsPerPage">
+            <option>2</option>
+            <option>4</option>
+            <option>8</option>
+            <option>10</option>
+          </select>
+        </div>
+      </div>
+    <hr>
+      <table>
+        <thead>
+          <tr>
+            <th ng-click="sort('list')">List</th>
+            <th ng-click="sort('description')">Description</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in items | orderBy:sortKey:reverse| filter:search| offset: currentPage*itemsPerPage | limitTo: itemsPerPage">
+            <td>{{item.list}}</td>
+            <td>{{item.description}}</td>
+            <td><img ng-src="{{ item.url }}" title="latitude: {{item.latitude}} and longitude: {{item.longitude}}"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3">
+            <div>
+              <ul>
+                <li ng-class="prevPageDisabled()">
+                  <a href ng-click="prevPage()">< Prev</a>
+                </li>
+                <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                  <a href="#">{{n+1}}</a>
+                </li>
+                <li ng-class="nextPageDisabled()">
+                  <a href ng-click="nextPage()">Next ></a>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
